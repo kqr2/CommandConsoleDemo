@@ -11,7 +11,7 @@ In order to port the demo from wokwi, the following changes were made:
 - Unzipped *RPi Pico with Elecia's CLI.zip* from wokwi and added to *CommandConsoleDemo/Core/Src/Console*
 - Removed from *CommandConsoleDemo/Core/Src/Console*: **main.c, diagram.json**
 - Change uart0 to huart1
-- Remap `uart_is_readable(uart0)` to `_HAL_UART_GET_FLAG(&huart1, UART_FLAG_RXNE)` in *CommandConsoleDemo/Core/Src/Console/consoleio.c:ConsoleIoReceive()* 
+- Remap `uart_is_readable(uart0)` to `_HAL_UART_GET_FLAG(&huart1, UART_FLAG_RXNE)` in `ConsoleIoReceive()` from  *CommandConsoleDemo/Core/Src/Console/consoleio.c:* 
 - Remap `uart_getc(uart0)` to `getchar()` in `ConsoleIoReceive()`
 - Remap `uart_putc(uart0, ch)` to `putchar(ch)` in `ConsoleIoReceive()`
 - Move `ConsoleInit()` and `ConsoleProcess()` loop into *CommandConsoleDemo/Core/Src/main.c*
