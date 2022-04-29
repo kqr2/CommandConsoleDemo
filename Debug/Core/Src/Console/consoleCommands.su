@@ -1,0 +1,9 @@
+../Core/Src/Console/consoleCommands.c:46:25:ConsoleCommandComment	16	static
+../Core/Src/Console/consoleCommands.c:53:25:ConsoleCommandHelp	32	static
+../Core/Src/Console/consoleCommands.c:74:25:ConsoleCommandParamExampleInt16	24	static
+../Core/Src/Console/consoleCommands.c:90:25:ConsoleCommandParamExampleHexUint16	24	static
+../Core/Src/Console/consoleCommands.c:104:25:ConsoleCommandVer	24	static
+../Core/Src/Console/consoleCommands.c:116:25:ConsoleCommandLedDelay	24	static
+../Core/Src/Console/consoleCommands.c:132:25:ConsoleCommandLedSelect	24	static
+../Core/Src/Console/consoleCommands.c:151:25:ConsoleCommandLedSet	24	static
+../Core/Src/Console/consoleCommands.c:173:31:ConsoleCommandsGetTable	4	static
