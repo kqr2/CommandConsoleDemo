@@ -7,7 +7,7 @@ STM32CubeMX was used to generate the initial pin configurations and project file
 In order to port the demo from wokwi, the following changes were made:
 - Implementation added for `__io_putchar(int ch)` using `HAL_UART_Transmit()` to remap UART to stdout in *CommandConsoleDemo/Core/Src/main.c*
 - Implementation added for `__io_getchar(void)` using `HAL_UART_Receive()` to remap UART to stdin n *CommandConsoleDemo/Core/Src/main.c*
-- Once stdin/stdout remapped which enables use of C stdio functions such as `printf`, disable buffering via  `setvbuf(stdin, NULL, _IONBF, 0)` and `setvbuf(stdout, NULL, _IONBF, 0)` to avoid blocking buffering delays
+- Once stdin/stdout remapped which enables use of C stdio functions such as `printf()`, disable buffering via  `setvbuf(stdin, NULL, _IONBF, 0)` and `setvbuf(stdout, NULL, _IONBF, 0)` to avoid blocking buffering delays
 - Unzipped *RPi Pico with Elecia's CLI.zip* from wokwi and added to *CommandConsoleDemo/Core/Src/Console*
 - Removed from *CommandConsoleDemo/Core/Src/Console*: **main.c, diagram.json**
 - Change uart0 to huart1
