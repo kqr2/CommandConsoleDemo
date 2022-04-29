@@ -2,7 +2,7 @@
 
 This is a Command Console Demo which ports https://wokwi.com/projects/324879108372693587 to the STM32F429 Discovery Kit and adds a few additional user commands.
 
-STM32CubeMX was used to generate the initial pin configurations and project files for the STM32F429 Discovery Kit.  I did not configure the individual pins myself and used the default settings for this project board.  STM32CubeIDE was then used to compile and debug the project.
+STM32CubeMX was used to generate the initial pin configurations and project files for the STM32F429 Discovery Kit.  I did not configure the individual pins myself and used the default pin settings for this project board. Only change needed was to set the project output for STM32CubeIDE which was then used to compile and debug the project.
 
 In order to port the demo from wokwi, the following changes were made:
 - Implementation added for __io_putchar(int ch) in main.c to remap UART to stdout
