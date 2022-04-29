@@ -16,7 +16,7 @@ In order to port the demo from wokwi, the following changes were made:
 - Remap `uart_putc(uart0, ch)` to `putchar(ch)` in `ConsoleIoReceive()`
 - Move `ConsoleInit()` and `ConsoleProcess()` loop into *CommandConsoleDemo/Core/Src/main.c*
 
-Added 3 new user functions to the demo:
+Added 3 new user functions to the demo in *CommandConsoleDemo/Core/Src/Console/consoleCommands.c*
 - led_delay : set led flashing delay in milliseconds
 - led_sel : select red or green led to flash
 - led_set : set non-flashing led to on or off
